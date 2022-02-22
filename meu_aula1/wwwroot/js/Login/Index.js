@@ -4,7 +4,7 @@
 let index = {
 
     logar: function () {
-
+        alert("Logando no sistema");
     },
     recuperarSenha: function () {
 
