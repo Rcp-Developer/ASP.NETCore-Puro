@@ -9,9 +9,10 @@ namespace meu_aula1.Controllers
             return View();
         }
 
-        public IActionResult Logar(string usuario, string senha)
+        public IActionResult Logar(Models.Usuario usuario)
         {
-            if (usuario != null && usuario == "Rodrigo" && senha != null && senha == "123")
+            if (usuario.Email != null && usuario.Email == "rodrigo-q2@hotmail.com" 
+                && usuario.Senha != null && usuario.Senha == "123456")
             {
                 return Content("Logou no sistema");
             }
