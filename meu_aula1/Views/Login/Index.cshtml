@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LayoutSimples.cshtml";
+}
+
+@section estilos {
+    <link href="~/css/Login/Index.css" rel="stylesheet" />
+}
+
+<h2>Login</h2>
+<form>
+    <div class="imgcontainer">
+        <img src="~/img/avatar.png" alt="Avatar" class="avatar" />
+    </div>
+    <div class="container">
+        <label for="usuario"><b>Usuário</b></label>
+        <input type="text" placeholder="Nome de usuário" name="usuario" required />
+        <label for="senha"><b>Senha</b></label>
+        <input type="password" placeholder="Sua senha" name="senha" required />
+        <button type="submit">Login</button>
+        <label>
+            <input type="checkbox" name="manter_logado" /> Manter-me logado
+        </label>
+    </div>
+    <div class="container">
+        <span class="psw"><a href="#">Esqueceu sua senha?</a></span>
+    </div>
+</form>
+
+<!--
+<table>
+    <thead>
+    <th>Num</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    </thead>
+    for (int i = 0; i <= 10; i++)
+    {
+        <tr>
+            <td>5</td>
+            <td>x</td>
+            <td>i</td>
+            <td>=</td>
+            <td>(i * 5)</td>
+        </tr>
+    }
+</table>*
+
+<div>
+     Html.Raw(ViewBag.msgErro)
+<b>ViewBag.msgErro</b>
+        </div>
+    </form>
+</div>
+-->
