@@ -19,9 +19,9 @@ namespace meu_aula1.Models
         public string Email { get => _email; set => _email = value; }
         public string Senha { get => _senha; set => _senha = value; }
 
-        public bool validarLogin(string email, string senha)
+        public bool validarLogin()
         {
-            return email == "rodrigo-q2@hotmail.com" && senha == "123456";
+            return Email == "rodrigo-q2@hotmail.com" && Senha == "123456";
         }
 
         public bool gravar()

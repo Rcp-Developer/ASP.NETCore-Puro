@@ -17,7 +17,12 @@
         <input type="text" placeholder="E-Mail" name="email" required />
         <label for="senha"><b>Senha</b></label>
         <input type="password" placeholder="Sua senha" name="senha" required />
-        <button type="submit">Login</button>
+        <div class="imgcontainer">
+            <button onclick="">Logar</button>
+        </div>
+        <div class="container">
+            @ViewBag.msgErro
+        </div>
         <label>
             <input type="checkbox" name="manter_logado" /> Manter-me logado
         </label>
@@ -27,7 +32,15 @@
     </div>
 </form>
 
+
+
+
 <!--
+    
+<form method="post" action="~/Login/Logar">
+    <button type="submit">Login</button>
+</form>
+
 <table>
     <thead>
     <th>Num</th>

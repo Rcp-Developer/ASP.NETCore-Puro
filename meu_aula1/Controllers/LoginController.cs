@@ -11,9 +11,9 @@ namespace meu_aula1.Controllers
 
         public IActionResult Logar(Models.Usuario usuario)
         {
-            if (usuario.Email != null && usuario.Email == "rodrigo-q2@hotmail.com" 
-                && usuario.Senha != null && usuario.Senha == "123456")
+            if(usuario.validarLogin())
             {
+                ViewBag.msgErro = "";
                 return Content("Logou no sistema");
             }
             else
