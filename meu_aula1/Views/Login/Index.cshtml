@@ -12,17 +12,18 @@
 }
 
 <h2>Login</h2>
-<form method="post" action="~/Login/Logar">
+<form>
     <div class="imgcontainer">
         <img src="~/img/avatar.png" alt="Avatar" class="avatar" />
     </div>
     <div class="container">
         <label for="email"><b>E-Mail</b></label>
-        <input type="text" placeholder="E-Mail" name="email" required />
+        <input type="text" placeholder="E-Mail" id="email" required />
         <label for="senha"><b>Senha</b></label>
-        <input type="password" placeholder="Sua senha" name="senha" required />
+        <input type="password" placeholder="Sua senha" id="senha" required />
         <div class="imgcontainer">
-            <button onclick="index.logar()">Logar</button>
+            <!--<button onclick="index.logar()">Logar</button>-->
+            <input type="button" onclick="index.logar()" value="Logar"/>
         </div>
         <div class="container">
             @ViewBag.msgErro

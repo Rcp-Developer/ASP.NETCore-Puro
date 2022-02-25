@@ -21,7 +21,8 @@ namespace meu_aula1.Models
 
         public bool validarLogin()
         {
-            return Email == "rodrigo-q2@hotmail.com" && Senha == "123456";
+            return Email != null && Email == "rodrigo-q2@hotmail.com"
+                && Senha != null && Senha == "123456";
         }
 
         public bool gravar()

@@ -9,20 +9,52 @@ namespace meu_aula1.Controllers
             return View();
         }
 
-        public IActionResult Logar(Models.Usuario usuario)
+        public IActionResult Logar([FromBody] System.Text.Json.JsonElement dados)
         {
-            if(usuario.validarLogin())
+            string senha = dados.GetProperty("Senha").ToString();
+            string email = dados.GetProperty("Email").GetString();
+            Models.Usuario usuario = new Models.Usuario();
+            usuario.Email = email;
+            usuario.Senha = senha;
+            bool sucesso;
+            string mensagem;
+
+            if (usuario.validarLogin())
             {
-                ViewBag.msgErro = "";
-                return Content("Logou no sistema");
+                sucesso = true;
+                mensagem = "Logou";
+                /*return Content("Logou no sistema");*/
             }
             else
             {
+                sucesso = false;
+                mensagem = "Dados incorretos";
+                /*
                 ViewBag.msgErro = "Dados inválidos.";
-                /*ViewBag.msgErro = "<b>Dados inválidos.</b>";*/
+                ViewBag.msgErro = "<b>Dados inválidos.</b>";
+                */
             }
 
-            return View("Index");
+            //Objeto anônimo, igual ao objeto literal do JavaScript
+            /*var retorno = new
+            {
+                sucesso = sucesso,
+                msg = mensagem
+            };*/
+
+            JsonResult JsonObj = Json(new
+            {
+                sucesso = sucesso,
+                msg = mensagem
+            });
+
+            return JsonObj;
+
+            /*return Json(new
+            {
+                sucesso = sucesso,
+                msg = mensagem
+            });*/
         }
 
         public IActionResult RecuperarSenha()
