@@ -618,7 +618,6 @@ C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\refs\System.Resources.Reader.dll
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\refs\System.Resources.ResourceManager.dll
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\refs\System.Resources.Writer.dll
-C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\refs\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\refs\System.Runtime.CompilerServices.VisualC.dll
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\refs\System.Runtime.dll
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\refs\System.Runtime.Extensions.dll
@@ -788,3 +787,15 @@ C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\meu_aula1.pdb
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\meu_aula1.genruntimeconfig.cache
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Index.cshtml.g.cs
+C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\ZstdNet.dll
+C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll

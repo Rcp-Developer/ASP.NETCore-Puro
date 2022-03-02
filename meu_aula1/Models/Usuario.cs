@@ -27,8 +27,22 @@ namespace meu_aula1.Models
 
         public bool gravar()
         {
-            //regras de negócio
+            DAL.UsuarioDAL dal = new DAL.UsuarioDAL();
+            dal.gravar(this);
+
             return true;
+        }
+
+        public bool buscar(int id)
+        {
+            DAL.UsuarioDAL dal = new DAL.UsuarioDAL();
+            return dal.buscar(id, this);
+        }
+
+        public List<Usuario> pesquisar(string nome)
+        {
+            DAL.UsuarioDAL dal = new DAL.UsuarioDAL();
+            return dal.pesquisar(nome);
         }
     }
 }

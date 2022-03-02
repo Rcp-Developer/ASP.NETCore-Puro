@@ -16,7 +16,7 @@ namespace meu_aula1.DAL
 
         public MySQLPersistence()
         {
-            _con = new MySqlConnection("Server=192.168.0.197;Database=exemplo;Uid=root;Pwd=#Aeiou@123!");
+            _con = new MySqlConnection("Server=192.168.0.197;Database=exemplo;Uid=rodrigo;Pwd=Aeiou@123");
             _cmd = _con.CreateCommand();
         }
 
@@ -37,6 +37,7 @@ namespace meu_aula1.DAL
         /// Executa comandos não consulta
         /// </summary>
         /// <param name="sql">Comando SQL</param>
+        /// <param name="parametros">Filtros do SQL</param>
         /// <returns>Retorna quantidade de linhas afetadas</returns>
         public int execNonQuery(string sql, Dictionary<string, object> parametros = null)
         {
@@ -61,6 +62,48 @@ namespace meu_aula1.DAL
                 fecharConexao();
             }
         }
-        
+
+        /// <summary>
+        /// Executa comandos sql que retornam somente uma linha e uma coluna ex: Count(), Max().
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <param name="parametros">Filtros do SQL</param>
+        /// <returns>Retorna tipo objeto para ser generico a quem chama o método</returns>
+        public object execQueryScalar(string sql, Dictionary<string, object> parametros = null) {
+
+            try
+            {
+                abrirConexao();
+                _cmd.CommandText = sql;
+                if (parametros != null)
+                {
+                    foreach (var param in parametros)
+                    {
+                        _cmd.Parameters.AddWithValue(param.Key, param.Value);
+                    }
+                }
+
+                return _cmd.ExecuteScalar();
+            }
+            finally
+            {
+                fecharConexao();
+            }
+        }
+
+        public System.Data.Common.DbDataReader execSelect(string sql, Dictionary<string, object> parametros = null)
+        {
+            abrirConexao();
+            _cmd.CommandText = sql;
+            if (parametros != null)
+            {
+                foreach (var param in parametros)
+                {
+                    _cmd.Parameters.AddWithValue(param.Key, param.Value);
+                }
+            }
+            MySqlDataReader reader = _cmd.ExecuteReader();
+            return reader;
+        }
     }
 }
