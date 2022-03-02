@@ -777,7 +777,6 @@ C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\meu_aula1.TagHelpers.output.cache
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\meu_aula1.RazorCoreGenerate.cache
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\Razor\Views\Item\Index.cshtml.g.cs
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutSimples.cshtml.g.cs
@@ -788,3 +787,4 @@ C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\meu_aula1.dll
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\meu_aula1.pdb
 C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\meu_aula1.genruntimeconfig.cache
+C:\Users\RODRIGO\Documents\GitHub\ASP.NETCore\meu_aula1\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Index.cshtml.g.cs

@@ -2,7 +2,7 @@
 
 namespace meu_aula1.Controllers
 {
-    public class ItemController : Controller
+    public class ProdutoController : Controller
     {
         public IActionResult Index()
         {
