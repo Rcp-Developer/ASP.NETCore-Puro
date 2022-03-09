@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace meu_aula1
 {
     public class Startup
     {
+        Configuracao _config = new Configuracao();
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -22,6 +25,11 @@ namespace meu_aula1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var conf = new ConfigureFromConfigurationOptions<IConfiguracao>(Configuration.GetSection("Configuracao"));
+            conf.Configure(_config);
+
+            Environment.SetEnvironmentVariable("StrCon", _config.StrCon);
+
             services.AddControllersWithViews();
         }
 

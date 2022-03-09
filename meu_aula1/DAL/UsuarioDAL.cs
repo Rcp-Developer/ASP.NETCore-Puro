@@ -77,5 +77,24 @@ namespace meu_aula1.DAL
             }
             return usuarios;
         }
+
+        public bool operacaoDeTransacao(string sql)
+        {
+            bool ok = true;
+
+            try
+            {
+
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+
+            }
+            return ok;
+        }
     }
 }

@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Frame";
+    Layout = "~/Views/Shared/_LayoutSimples.cshtml";
+}
+
+@section scripts{
+    <script src="~/js/Usuario/Index.js"></script>
+}
+
+<h1>este é um frame</h1>
+<div>
+    <input type="search" id="txtPesquisa"/>
+    <input type="button" value="Pesquisar" onclick="index.executaPesquisa()" />
+</div>
+<br />
+<br />
+<br />
+<table id="tableResultado" style="display: none">
+    <thead>
+        <tr>
+            <th>
+                Usuário
+            </th>
+        </tr>
+    </thead>
+    <tbody id="tbodyResultado">
+        <!--Ajax-->
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+</table>
+

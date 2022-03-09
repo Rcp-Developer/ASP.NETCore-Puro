@@ -11,12 +11,16 @@ namespace meu_aula1.DAL
         public MySqlConnection _con { get; set; }
         
         public MySqlCommand _cmd { get; set; }
+
+        public MySqlTransaction _trans { get; set; }
         
         public int _ultimo_id { get; set; }
 
         public MySQLPersistence()
         {
-            _con = new MySqlConnection("Server=192.168.0.197;Database=exemplo;Uid=rodrigo;Pwd=Aeiou@123");
+            string str_conexao = Environment.GetEnvironmentVariable("StrCon");
+
+            _con = new MySqlConnection(str_conexao);
             _cmd = _con.CreateCommand();
         }
 
@@ -105,5 +109,33 @@ namespace meu_aula1.DAL
             MySqlDataReader reader = _cmd.ExecuteReader();
             return reader;
         }
+
+        private void commit()
+        {
+            if (_trans != null)
+            {
+                _trans.Commit();
+                _trans.Dispose();
+                _trans = null;
+            }
+        }
+
+        private void rollback()
+        {
+            if (_trans != null)
+            {
+                _trans.Rollback();
+                _trans.Dispose();
+                _trans = null;
+            }
+        }
+
+        private void iniciarTransacao()
+        {
+            _trans = _con.BeginTransaction();
+            _cmd.Transaction = _trans;
+        }
+
+        
     }
 }

@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section estilos{
+    <link href="~/lib/Fancyapps/dist/fancybox.css" rel="stylesheet" />
+}
+
+@section scripts {
+    <script src="~/js/Usuario/Index.js"></script>
+    <script src="~/lib/Fancyapps/dist/fancybox.umd.js"></script>
+}
+
+<div>
+    <input type="button" value="Pesquisar" onclick="index.pesquisar()" />
+</div>
